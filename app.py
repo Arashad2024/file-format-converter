@@ -49,6 +49,7 @@ def processing_files(ds_names = None):
             print(f'Processing {ds_name}')
             file_converter(src_base_dir, tgt_base_dir, ds_name)
         except NameError as ne:
+            print(ne)
             print(f'Error processing {ds_name}')
             pass
 
